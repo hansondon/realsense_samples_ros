@@ -25,7 +25,6 @@
   <run_depend>roscpp</run_depend>
   <run_depend>std_msgs</run_depend>
   <run_depend>rostime</run_depend>
-  <run_depend>realsense_ros_camera</run_depend>
   <run_depend>roscpp_serialization</run_depend>
   <run_depend>rospy</run_depend>
   <run_depend>sensor_msgs</run_depend>

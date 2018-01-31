@@ -1,7 +1,7 @@
 <!--
 
 Record a test stream from the camera, into a ROS bag for later playback with Person
-roslaunch realsense_ros_camera record_bag_person.launch bag_path:=my_value
+roslaunch realsense_camera record_bag_person.launch bag_path:=my_value
 
 --> 
 <launch>
@@ -10,7 +10,7 @@ roslaunch realsense_ros_camera record_bag_person.launch bag_path:=my_value
 
   <node pkg="rosbag" type="record" name="rosbag" args="-O $(arg bag_path) $(arg bag_topics)"/>
 
-  <include file="$(find realsense_ros_camera)/launch/camera.launch">
+  <include file="$(find realsense_camera)/launch/camera.launch">
     <arg name="enable_fisheye" value="false"/>
     <arg name="depth_width" value="320"/>
     <arg name="depth_height" value="240"/>
